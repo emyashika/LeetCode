@@ -3,7 +3,7 @@ class Solution {
         int m=haystack.length();
         int n=needle.length();
         int j=0;
-        int index=-1;
+        int index=0;
         if(n>m){
             return -1;
         }
@@ -17,7 +17,7 @@ class Solution {
             else if(index!=-1 && haystack.charAt(i)!=needle.charAt(j) ){
                 i=i-j;
                 j=0;
-                index=-1;
+                index=0;
         }
         
     }
