@@ -6,7 +6,7 @@ class Solution {
         return lcsRecursive(text1,text2,m,n,cache);
         
     }
-    int lcsRecursive(String s1, String s2,int m,int n, int cache[][]){
+    public int lcsRecursive(String s1, String s2,int m,int n, int cache[][]){
         int count=0;
         if(m==0||n==0){
             return 0;
